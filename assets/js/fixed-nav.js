@@ -1,5 +1,1 @@
-$( document ).ready(function() {
-1
-
- 
-});
+/*! 구현중 */
