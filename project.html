@@ -6,6 +6,10 @@
     <title>twkim</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/gear.ico">
 
+    <link rel="stylesheet" href="assets/css/fixed-nav.css">
+    <script src="assets/js/fixed-nav.js"></script>
+
+
     <link rel="stylesheet" href="assets/css/main2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
@@ -169,6 +173,18 @@
         </body>
         </html>
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if(scroll > 0){
+                        $("nav").css({position:'fixed'});
+                    } else  {
+                        $("nav").css({position:'relative'});
+                    }
+                })
+            });
+        </script>
 </body>
 </html>

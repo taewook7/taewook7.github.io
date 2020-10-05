@@ -72,36 +72,7 @@
                             </ul>
                         </li>
                     </ul>
-
-                    <ul>
-                        <li>
-                            사무자동화산업기사
-                            <ul>
-                                <li>한국산업인력공단</li>
-                                <li>2020/08/28</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            컴퓨터활용능력1급
-                            <ul>
-                                <li>대한상공회의소</li>
-                                <li>2020/04/24</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            지게차운전기능사
-                            <ul>
-                                <li>한국산업인력공단</li>
-                                <li>2020/03/12</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    
                 <h1 id="education">education</h1>
                 <ul>
                     <li>
@@ -113,8 +84,9 @@
                     <li>
                         더조은컴퓨터학원
                         <ul>
-                            <li>Java programming(Java) 60H </li>
                             <li>Javascript+Jquery 60H </li>
+                            <li>Java programming(Java) 60H </li>
+                            <li>Java programming(Spring) 60H</li>
                         
                         </ul>
                     </li>
@@ -167,6 +139,20 @@
            © 2020 Taewook Kim
         </span>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if(scroll > 0){
+                    $("header").css({position:'fixed'});
+                } else  {
+                    $("header").css({position:'relative'});
+                }
+            })
+        });
+    </script>
 
 </body>
 </html>
