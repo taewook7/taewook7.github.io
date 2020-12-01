@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>twkim</title>
+    <link rel="stylesheet" href="assets/css/main2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">  
+    <!-- 그림 CSS 위 코드-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/gear.ico">
+   
+    <script src="https://www.google-analytics.com/analytics.js"></script>
+
+    <!-- 아직 구현안함. -->
+    <link rel="stylesheet" href="assets/css/fixed-nav.css">
+    <script src="assets/js/fixed-nav.js"></script>
+
+</head>
+<body>
+    <header >
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html">
+                <h2 class="nav-title">twkim</h2>
+            </a>
+            <ul>
+                <li>
+                    <a href="taewook7.html">About</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+                <li>
+                    <a href="#footer">Contacts</a>
+                </li>
+
+                <!-- 아래 기능 아직 미완성. -->
+                <!-- <span class="underline" style="width: 50px; left:0px;"> -->
+                </span>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    
+    <main>
+        <div class="about">
+            <div class="profile">
+                <img class="selfie" alt="TaeWook Kim" src="assets/img/profile2.jpg">
+                <div class="info">
+                    <div class="title">TaeWook Kim</div>
+                    <div class="description">Hello nice to meet you</div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <h1 id="about-me">About Me</h1>
+                <p>I'm a Web Developer who likes traveling and running
+                <br> I like Java 
+                <br>
+                I want to develop a program for a long time. :)
+                </p>
+                <p><br></p>
+
+                <h1 id="certificate">Certificate</h1>
+                    <ul>
+                        <li>
+                            정보처리기사
+                            <ul>
+                                <li>한국산업인력공단</li>
+                                <li>2020/08/28</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                <h1 id="education">education</h1>
+                <ul>
+                    <li>
+                        동서울대학교 (2013 ~ 2021)
+                        <ul>
+                            <li>컴퓨터소프트웨어과(4년)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        더조은컴퓨터학원
+                        <ul>
+                            <li>Javascript+Jquery 60H </li>
+                            <li>Java programming(Java) 60H </li>
+                            <li>Java programming(Spring) 60H</li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <br>
+      
+        <div class="social-layer">
+            <hr style="border: 1px solid silver;" width="90%">
+            <a href="#" class="top">Top</a>
+            <h1>Contacts</h1>
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="mailto:x_o_d_n@naver.com" title="email">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                         </span> 
+                         </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/x_o_d_n" title="blog">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bold fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                   
+                    </li>
+                    <li>
+                        <a href="https://github.com/taewook7" title="github">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <span>
+           © 2020 Taewook Kim
+        </span>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if(scroll > 0){
+                    $("header").css({position:'fixed'});
+                } else  {
+                    $("header").css({position:'relative'});
+                }
+            })
+        });
+    </script>
+
+</body>
+</html>

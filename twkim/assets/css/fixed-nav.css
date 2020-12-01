@@ -1,0 +1,11 @@
+/*!
+구현중
+ */
+
+  
+ header{ z-index:999; box-shadow: 0 0 3px #ccc; position:relative; width:100%; background:#fff; top:0;} 
+ nav{ z-index:999; box-shadow: 0 0 3px #ccc; position:relative; width:100%; background:#fff; top:0;} 
+
+
+ header.on{position:fixed;}
+header .on .logo{padding:10px 0;}
